@@ -11,7 +11,7 @@ const MakeAdmin = () => {
             role: 'admin'
         }
         console.log(serviceData);
-        const url = `http://localhost:5000/admin/add`;
+        const url = `https://stormy-reef-96028.herokuapp.com/admin/add`;
         fetch(url, {
             method: 'POST',
             headers: {

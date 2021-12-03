@@ -14,7 +14,7 @@ const ProcessPayment = ({ order }) => {
             ...order,
             status: 'Pending'
         }
-        const url = `http://localhost:5000/addOrder`;
+        const url = `https://stormy-reef-96028.herokuapp.com/addOrder`;
         fetch(url, {
             method: 'POST',
             headers: {

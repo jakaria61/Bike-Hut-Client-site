@@ -32,7 +32,7 @@ function App() {
   const [loggedInUser, setLoggedInUser] = useState({});
   const [isAdmin, setIsAdmin] = useState('');
   useEffect(() => {
-    fetch(`http://localhost:5000/admin/${loggedInUser.email}`)
+    fetch(`https://stormy-reef-96028.herokuapp.com/admin/${loggedInUser.email}`)
       .then(res => res.json())
       .then(data => setIsAdmin(data[0] || 0))
   }, [])

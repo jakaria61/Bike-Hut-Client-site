@@ -5,7 +5,7 @@ import { faTrashAlt } from '@fortawesome/free-solid-svg-icons'
 const ManageServiceCard = ({ service }) => {
     const { _id, name, price, description } = service;
     const deleteProduct = id => {
-        fetch(`http://localhost:5000/delete/${id}`, {
+        fetch(`https://stormy-reef-96028.herokuapp.com/delete/${id}`, {
             method: 'DELETE'
         })
     }

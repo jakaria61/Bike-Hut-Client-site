@@ -12,7 +12,7 @@ const Sidebar = () => {
     const [isAdmin, setIsAdmin] = useState('');
     const { user, setUser } = useAuth()
     useEffect(() => {
-        fetch(`http://localhost:5000/admin/${user.email}`)
+        fetch(`https://stormy-reef-96028.herokuapp.com/admin/${user.email}`)
             .then(res => res.json())
             .then(data => setIsAdmin(data[0] || 0))
     }, [])

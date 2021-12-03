@@ -14,7 +14,7 @@ const AddService = () => {
             imageURL: imageURL
         }
         //console.log(serviceData);
-        const url = `http://localhost:5000/addService`;
+        const url = `https://stormy-reef-96028.herokuapp.com/addService`;
         fetch(url, {
             method: 'POST',
             headers: {

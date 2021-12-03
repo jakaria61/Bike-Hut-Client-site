@@ -4,7 +4,7 @@ import './ServiceListCard.css';
 const ServiceListCard = ({ service }) => {
     const { serviceName, price, cardBrand, status, address, _id } = service;
     const deleteProduct = id => {
-        fetch(`http://localhost:5000/cancel/${id}`, {
+        fetch(`https://stormy-reef-96028.herokuapp.com/cancel/${id}`, {
             method: 'DELETE'
         })
     }

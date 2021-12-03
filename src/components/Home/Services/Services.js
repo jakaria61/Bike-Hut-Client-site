@@ -6,7 +6,7 @@ import ServiceCard from '../ServiceCard/ServiceCard';
 const Services = () => {
     const [serviceData, setServiceData] = useState({});
     useEffect(() => {
-        fetch('http://localhost:5000/services')
+        fetch('https://stormy-reef-96028.herokuapp.com/services')
             .then(res => res.json())
             .then(data => setServiceData(data.slice(0, 6)))
     }, [])

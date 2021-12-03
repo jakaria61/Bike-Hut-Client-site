@@ -21,7 +21,7 @@ const AddReview = () => {
             ...data,
             photo: photoURL
         }
-        const url = `http://localhost:5000/addReview`;
+        const url = `https://stormy-reef-96028.herokuapp.com/addReview`;
         fetch(url, {
             method: 'POST',
             headers: {
